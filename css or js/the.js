@@ -8,8 +8,8 @@
         // LOAD EVERYTHING IN ORDER
 
         // 1. Core Layout
-        loadSection('components/header.html', 'header-placeholder');
-        loadSection('components/navigation.html', 'nav-placeholder');
+        loadSection('./components/header.html', 'header-placeholder');
+        loadSection('/components/navigation.html', 'nav-placeholder');
         loadSection('components/hero-section.html', 'hero-placeholder');
         loadSection('components/hiring-bar.html', 'hiring-placeholder');
         // 2. The 4 Main Business Areas
@@ -106,4 +106,5 @@ document.addEventListener('click', function(e) {
             });
     }
 });
+
     
