@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>  
+    <title>Uttam Hub Header</title>
+    <style>
+    /* 1. DEFINE YOUR COLORS HERE */
+    :root {
+        --primary: #1a1a1a;   /* Dark Background */
+        --accent: #d4af37;    /* Gold/Accent Color */
+        --text-light: #ffffff;
+    }
+
     header { 
         background: var(--primary); 
-        color: white; 
+        color: var(--text-light); 
         padding: 1rem 5%; 
         display: flex; 
         justify-content: space-between; 
@@ -15,22 +22,37 @@
         position: sticky; 
         top: 0; 
         z-index: 1000; 
+        /* Optional: Add a shadow so it stands out when scrolling */
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     }
+
     .logo { 
         font-size: 1.5rem; 
         font-weight: bold; 
         color: #fff; 
         text-decoration: none; 
+        letter-spacing: 1px;
     }
+
     .logo span { 
         color: var(--accent); 
+    }
+
+    /* Simple reset to remove default margins */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
     }
     </style>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">UTTAM<span>HUB</span></a>
-        <a href="#contact" style="background:var(--accent); color:white; padding:8px 15px; text-decoration:none; border-radius:5px; font-size:0.8rem;">Contact Us</a>
+        <a href="#contact" style="background:var(--accent); color:white; padding:8px 15px; text-decoration:none; border-radius:5px; font-size:0.8rem; font-weight:bold;">Contact Us</a>
     </header>
+    
+    <div style="height: 2000px; padding: 20px;">
+        <p>Scroll down to see the sticky header in action...</p>
+    </div>
 </body>
 </html>
